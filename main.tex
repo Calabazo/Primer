@@ -3,8 +3,10 @@
 \usepackage[spanish]{babel}
 \usepackage{listings}
 \usepackage{graphicx}
-\graphicspath{ {images/} }
-\usepackage{cite}
+\usepackage{hyperref}
+
+\usepackage[natbibapa]{apacite} % to enable '\citet' and '\citep' macros
+\bibliographystyle{apacite}
 
 \begin{document}
 
@@ -47,22 +49,22 @@ Desde mi perspectiva, lo que he aprendido con los años y la ayuda de este docum
 que este tiene, no puedo decir que haya alguna debido a que todas están hechas para trabajar en un conjunto según lo que yo pienso y eso es lo que me parece realmente
 increíble en los computadores y máquinas.
 La memoria diría que es el lugar donde se trabajan las cosas, donde el microprocesador trabaja con las cosas que hay en la memoria antes de guardarlas en el disco duro.
-aunque también queda claro que hay muchos tipos de memorias como las que se encargan de dar inicio a la Bios y no pueden ser modificadas, la RAM, cache, entre otros.
+aunque también queda claro que hay muchos tipos de memorias como las que se encargan de dar inicio a la Bios y no pueden ser modificadas, la RAM, cache, entre otros. \cite{Tame}
 
 \section{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.} \label{contenido}
 Los tipos de memoria que conocía antes de este documentos solamente era la RAM y la cache, yo pensaba que la memoria RAM lo que hacía era asistir al computador para 
 distribuir los programas del alguna forma y hacer que todo fuera más rápido, leyendo en ciertas páginas encontré que la memoria RAM se encarga de las instrucciones y
-datos del computador.
+datos del computador.\cite{Ram}
 La memoria cache solo sabía que existía, que cuando habría un programa, podía encontrar cosas de este que habían sido recientes en una carpeta llamada cache,
 posiblemente yo hubiera estado equivocado por lo que llegué a encontrar en documentos como los que el profesor Augusto subió, donde dicen que la memoria
-cache se encarga de hacer una copia de las instrucciones más usadas para no tener que ir a buscarlos en la RAM que es más lenta.
+cache se encarga de hacer una copia de las instrucciones más usadas para no tener que ir a buscarlos en la RAM que es más lenta.\cite{Tame}
 
 
 \section{Describa la manera como se gestiona la memoria en un computador.}
 %
-La memoria se gestiona al hacer uso de ella, ya sea asignar secciones de memoria a los programas que la solicitan o liberando secciones que ya no se están utilizando.
+La memoria se gestiona al hacer uso de ella, ya sea asignar secciones de memoria a los programas que la solicitan o liberando secciones que ya no se están utilizando.\citep{Wikime}
 
-La memoria siempre esta en uso cada vez que usamos el computador, sin importar el programa o lo que sea que hagamos estamos haciendo uso de ella sin saberlo debido a que en esta se guardan las instrucciones que hagamos para hacer uso de estas nuevamente más tarde.O como sucede cuando se busca un archivo en el disco duro, que al hacerlo se lleva a ocupar un espacio en la memoria y de ahí un microprocesador hace los cambios en el documento o archivo que fue puesto recientemente en la memoria para luego guardarlo de nuevo en el disco duro.
+La memoria siempre esta en uso cada vez que usamos el computador, sin importar el programa o lo que sea que hagamos estamos haciendo uso de ella sin saberlo debido a que en esta se guardan las instrucciones que hagamos para hacer uso de estas nuevamente más tarde.O como sucede cuando se busca un archivo en el disco duro, que al hacerlo se lleva a ocupar un espacio en la memoria y de ahí un microprocesador hace los cambios en el documento o archivo que fue puesto recientemente en la memoria para luego guardarlo de nuevo en el disco duro.\cite{Tame}
 
 
 
@@ -79,8 +81,10 @@ Hay formulas en las que se habla sobre estos dos términos y dicen que el que ob
         \textbf{¿Por qué esto es importante?}
         
     \vspace{0.8cm}
-    Esto es realmente importante porque a más velocidad más cosas son las que se pueden hacer, siempre se ha buscado el mejorar, hacer las cosas más pequeñas, rápidas y este es uno de los porque es importante en especial porque al hacer todo más rápido, permite hacer las  operaciones de almacenar, borrar y realmacenar nueva información y datos se completarán más rápidamente, lo que en algunos casos puede marcar una diferencia importante de rendimiento.
-\bibliographystyle{IEEEtran}
-\bibliography{references}
+    Esto es realmente importante porque a más velocidad más cosas son las que se pueden hacer, siempre se ha buscado el mejorar, hacer las cosas más pequeñas, rápidas y este es uno de los porque es importante en especial porque al hacer todo más rápido, permite hacer las  operaciones de almacenar, borrar y realmacenar nueva información y datos se completarán más rápidamente, lo que en algunos casos puede marcar una diferencia importante de rendimiento. \citep{RAMLA}.
+\newline
+
+\medskip
+\bibliography{references.bib}
 
 \end{document}
